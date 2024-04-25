@@ -1,0 +1,94 @@
+@import './../../components/variables.scss';
+@import './../../components/fonts.scss';
+
+.wrapper {
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+
+    .main {
+        width: auto;
+        height: 80vh;
+        background-image: url(./../../images/home/ImageForBackground.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5.625rem 0 0 5rem;
+    
+        &__container {
+            height: 20rem;
+            width: 35rem;
+            background-color: $white;
+            border-radius: 2rem;
+            padding: 1.6rem;
+    
+            &__title {
+                font-size: $title;
+                font-weight: 500;
+                color: $primary;
+                margin-bottom: 2rem;
+            }
+    
+            &__caption {
+                font-size: $standart;
+                font-weight: 400;
+                color: $primary;
+                margin-bottom: 4rem;
+            }
+    
+            &__button {
+                padding: 1.1rem 2.7rem;
+                color: $white;
+                background-color: $primary;
+                border-radius: 1rem;
+                font-size: $standart;
+                font-weight: 500;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .whyus {
+        margin: 4rem 6.25rem 6rem 6.25em;
+
+        &__title {
+            text-align: center;
+            font-size: $title;
+            font-weight: 500;
+            color: $primaryLite;
+            margin-bottom: 4rem;
+        }
+
+        &__container {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+
+            &__content{
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                &__title {
+                    font-size: $titleLite;
+                    font-weight: 500;
+                    color: $primaryLite;
+                }
+
+                &__caption {
+                    font-size: $standart;
+                    font-weight: 400;
+                    color: $primaryLite;
+                    line-height: 1.8rem;
+                }
+            }
+        }
+    }
+
+    .weoffer {
+        margin: 0 5rem 2.5rem 5rem;
+
+        &__title {
+            text-align: center;
+        }
+    }
+}
+
