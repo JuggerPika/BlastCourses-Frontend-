@@ -20,8 +20,8 @@ const RegistrationForm: React.FC = () => {
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    
-    const url = process.env.REACT_APP_API_URL + '/auth/users/';
+
+    const url = 'https://blast-courses-cfqbzl23vq-lm.a.run.app/auth/users/';
     console.log(url);
 
     try {
