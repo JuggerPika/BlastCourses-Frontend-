@@ -10,6 +10,23 @@ const RegistrationForm: React.FC = () => {
     rePassword: ''
   });
 
+  const [error, setError] = useState('');
+
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const emailRegex = /\S+@\S+\.\S+/; // Регулярний вираз для перевірки електронної адреси
+    const { value } = event.target;
+    
+    if (!emailRegex.test(value)) {
+      console.error("Введіть правильну електронну адресу.");
+    } else {
+      setFormData(prev => ({
+        ...prev,
+        email: value
+      }));
+    }
+  };
+  
+
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     setFormData(prev => ({
@@ -20,10 +37,10 @@ const RegistrationForm: React.FC = () => {
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-
+  
     const url = 'https://blast-courses-cfqbzl23vq-lm.a.run.app/auth/users/';
     console.log(url);
-
+  
     try {
       const response = await fetch(url, {
         method: 'POST',
@@ -32,19 +49,24 @@ const RegistrationForm: React.FC = () => {
         },
         body: JSON.stringify(formData)
       });
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
+  
       const data = await response.json();
-      console.log(data); // Handle the response data as needed
+      if (!response.ok) {
+        throw new Error(data.error || 'Network response was not ok');
+      }
+      console.log(data);
+      setError(''); // Clear any previous errors on successful submission
     } catch (error) {
+      setError(error.message);
       console.error('There was a problem with the fetch operation:', error);
     }
   };
+  
 
   return (
     <div className="container">
       <div className="title">Registration</div>
+      {error && <div className="error-message">{error}</div>} {/* Display the error message if there is an error */}
       <div className="content">
         <form onSubmit={handleSubmit}>
           <div className="user-details">
