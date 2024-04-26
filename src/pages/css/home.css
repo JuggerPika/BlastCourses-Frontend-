@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-semibold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.wrapper {
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+.wrapper .main {
+  width: auto;
+  height: 80vh;
+  background-image: url(./../../images/home/ImageForBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5.625rem 0 0 5rem;
+}
+.wrapper .main__container {
+  height: 20rem;
+  width: 35rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 1.6rem;
+}
+.wrapper .main__container__title {
+  font-size: 42px;
+  font-weight: 500;
+  color: #627254;
+  margin-bottom: 2rem;
+}
+.wrapper .main__container__caption {
+  font-size: 24px;
+  font-weight: 400;
+  color: #627254;
+  margin-bottom: 4rem;
+}
+.wrapper .main__container__button {
+  padding: 1.1rem 2.7rem;
+  color: #fff;
+  background-color: #627254;
+  border-radius: 1rem;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.wrapper .whyus {
+  margin: 4rem 6.25rem 6rem 6.25em;
+}
+.wrapper .whyus__title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 500;
+  color: #76885B;
+  margin-bottom: 4rem;
+}
+.wrapper .whyus__container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+.wrapper .whyus__container__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.wrapper .whyus__container__content__title {
+  font-size: 36px;
+  font-weight: 500;
+  color: #76885B;
+}
+.wrapper .whyus__container__content__caption {
+  font-size: 24px;
+  font-weight: 400;
+  color: #76885B;
+  line-height: 1.8rem;
+}
+.wrapper .weoffer {
+  margin: 0 5rem 2.5rem 5rem;
+}
+.wrapper .weoffer__title {
+  text-align: center;
+}

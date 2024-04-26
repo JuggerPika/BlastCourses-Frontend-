@@ -1,9 +1,9 @@
 import React from 'react';
 import './home.scss';
 import './../../components/reset.css'
-import UkreineMap from './../../images/home/UkreineMap.jpg'
-import Medic from './../../images/home/medicine.jpg'
-import Military from './../../images/home/Military.jpg'
+// import UkreineMap from './../../images/home/UkreineMap.jpg'
+// import Medic from './../../images/home/medicine.jpg'
+// import Military from './../../images/home/Military.jpg'
 
 function Home() {
   return (
@@ -42,7 +42,7 @@ function Home() {
               </p>
             </span>
 
-            <img src={ UkreineMap } alt="" className="whyus__container__image" />
+            {/* <img src={ UkreineMap } alt="" className="whyus__container__image" /> */}
           </div>
         </section>
 
@@ -51,7 +51,7 @@ function Home() {
 
           <div className="weoffer__container">
             <div className="weoffer__container__left">
-              <img src={ Medic } alt="" className="weoffer__container__left__image" />
+              {/* <img src={ Medic } alt="" className="weoffer__container__left__image" /> */}
               <p className="weoffer__container__left__title">Медична підготовка</p>
               <p className="weoffer__container__left__caption">
                 Наші курси з медичної підготовки <br/>
@@ -79,7 +79,7 @@ function Home() {
                 готуватися до будь-яких викликів, які <br/>
                 можуть зустріти на своєму шляху.
               </p>
-              <img src={ Military } alt="" className="weoffer__container__right__image" />
+              {/* <img src={ Military } alt="" className="weoffer__container__right__image" /> */}
             </div>
           </div>
         </section>
