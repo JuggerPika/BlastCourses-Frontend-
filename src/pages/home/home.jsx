@@ -94,9 +94,6 @@ function Home() {
             Дізнатися більше
           </Link>
         </section>
-
-
-        {/* <Footer /> */}
     </div>
   );
 }

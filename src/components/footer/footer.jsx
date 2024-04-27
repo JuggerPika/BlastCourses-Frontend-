@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; 
 import './footer.scss'
 import Tiktok from './../../images/footer/tiktok.svg'
-import Instagram from './../../images/footer/instagram.svg'
+import Instagram from './../../images/footer/Instagram.svg'
 import Telegram from './../../images/footer/telegram.svg'
 import Facebook from './../../images/footer/fecebook.svg'
 import Twitter from './../../images/footer/twitter.svg'
