@@ -1,8 +1,9 @@
 import React from 'react';
 import './home.scss';
+import { Link } from 'react-router-dom'; 
 import './../../components/reset.css'
-import UkreineMap from './../../images/home/UkreineMap.jpg'
-import Medic from './../../images/home/medicine.jpg'
+import Help from './../../images/home/help.jpg'
+import Medicine from './../../images/home/medicine.jpeg'
 import Military from './../../images/home/Military.jpg'
 
 function Home() {
@@ -19,7 +20,9 @@ function Home() {
               особистості, що допомагає військовим <br/>
               досягати своїх цілей у службі та поза нею.
             </p>
-            <a href="#" className="main__container__button">Дізнатися більше</a>
+            <Link to="/Login" className="main__container__button">
+              Дізнатися більше
+            </Link>
           </div>
         </main>
 
@@ -39,10 +42,14 @@ function Home() {
                 компетентними в своїй службі, а також <br/>
                 розвивати їх особистість для досягнення <br/>
                 успіху в будь-яких сферах життя.
+
+                <Link to="/Login" className="whyus__container__content__button">
+                  Дізнатися більше
+                </Link>
               </p>
             </span>
 
-            <img src={ UkreineMap } alt="" className="whyus__container__image" />
+            <img src={ Help } alt="" className="whyus__container__image" />
           </div>
         </section>
 
@@ -51,7 +58,7 @@ function Home() {
 
           <div className="weoffer__container">
             <div className="weoffer__container__left">
-              <img src={ Medic } alt="" className="weoffer__container__left__image" />
+              <img src={ Medicine } alt="" className="weoffer__container__left__image" />
               <p className="weoffer__container__left__title">Медична підготовка</p>
               <p className="weoffer__container__left__caption">
                 Наші курси з медичної підготовки <br/>
@@ -72,7 +79,7 @@ function Home() {
                 Наші курси загальної підготовки <br/>
                 спрямовані на розвиток навичок лідерства, <br/>
                 тактичної майстерності, стратегічного <br/>
-                мислення та комунікаційних вмінь серед <br/>
+                мислення та комунікаційних вмінь   серед <br/>
                 військових. За допомогою передових <br/>
                 методів навчання наші учасники можуть <br/>
                 ефективно розвивати свої здібності та <br/>
@@ -82,7 +89,14 @@ function Home() {
               <img src={ Military } alt="" className="weoffer__container__right__image" />
             </div>
           </div>
+
+          <Link to="/Login" className="weoffer__button">
+            Дізнатися більше
+          </Link>
         </section>
+
+
+        {/* <Footer /> */}
     </div>
   );
 }

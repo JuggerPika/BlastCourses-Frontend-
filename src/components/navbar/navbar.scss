@@ -14,18 +14,19 @@
 
     &__container {
         display: flex;
-        justify-content: space-between;
-        margin: 2rem 5rem;
+        justify-content: center;
+        gap: 22rem;
+        margin: 2rem 2rem;
 
         &__img {
-            width: 440px;
-            height: 100px;
+            width: 300px;
+            height: 70px;
         }
 
         &__menu {
             display: flex;
             flex-direction: column;
-            gap: 2rem;
+            gap: 1.5rem;
 
             
             &__auth {
@@ -37,7 +38,7 @@
                     display: block;
                     border: 2px solid $primary;
                     border-radius: .5rem;
-                    padding: .8rem 3rem;
+                    padding: .6rem 2rem;
                     color: $primary;
                     font-size: $standart;
 
